@@ -33,7 +33,8 @@ Herramietas a utilizar:
 - Java
 - Maven
 - Postman
-- React
+- ReactJS
+- DB2
 
 
 ## Recursos generales:
@@ -54,7 +55,7 @@ Herramietas a utilizar:
 - Demo: https://watson-conversation-duo-dev.ng.bluemix.net/
 - Redbook: http://www.redbooks.ibm.com/redbooks.nsf/redbookabstracts/sg248394.html?Open
 
-### 3. Visual Recognition
+### 2. Visual Recognition
 - Documentation: https://console.bluemix.net/docs/services/visual-recognition/getting-started.html#getting-started-tutorial
 - API Reference: https://www.ibm.com/watson/developercloud/visual-recognition/api/v3/java.html?java
 - Demo: https://watson-visual-recognition-duo-dev.ng.bluemix.net/
