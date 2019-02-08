@@ -5,10 +5,11 @@
 Demostrar el uso de los APIs cognitivos de Watson disponibles en IBM Cloud y la utilizacion de los lenguajes de programacion Java (principalmente), Javascript (NodeJS) y otras herramientas para crear applicaciones estos APIs.
 
 ## Objetivos especificos:
-  - Demostrar el funcionamiento del API: Watson Assistant
-  - Demostrar el funcionamiento del API: Visual Recognition
+  - Demostrar el funcionamiento del API de Watson Assistant
+  - Demostrar el funcionamiento del API de Visual Recognition
   - Crear applicacion en IBM Cloud utilizando los servicios Visual Recognition
   - Crear applicacion en IBM Cloud utilizando los servicios Watson Assistant
+  - Demostrar un desarrollo basico de aplicaciones en cloud que usan APIs cognitivos 
 
 
 ## Propuesta de agenda
@@ -23,7 +24,7 @@ Day 2:
   - 2.5 hrs - Ejercicio practico: Integrando la applicación de chat con IBM Watson.
 
 Day 3:
-  - 1.0 hrs - Introduccion al API Watson Assistant.
+  - 1.0 hrs - Introduccion al API Visual Recognition.
   - 2.0 hrs - Ejercicio practico: TBD
 
 Herramietas a utilizar:
