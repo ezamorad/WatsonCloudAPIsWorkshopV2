@@ -27,7 +27,7 @@ Day 3:
   - 1.0 hrs - Introducción al API Visual Recognition.
   - 2.0 hrs - Ejercicio práctico: TBD
 
-Herramietas a utilizar:
+Herramientas a utilizar:
 - Eclipse IDE (Con plug-ins de IBM Cloud)
 - IBM Cloud
 - Java
@@ -49,14 +49,14 @@ Herramietas a utilizar:
 
 
 
-### 1. Watson Assistant (formerly Conversation)
-- Documentation: https://console.bluemix.net/docs/services/conversation/getting-started.html#gettingstarted
-- API Reference: https://www.ibm.com/watson/developercloud/assistant/api/v1/java.html?java
+### 1. Watson Assistant)
+- Documentación: https://console.bluemix.net/docs/services/conversation/getting-started.html#gettingstarted
+- Documentación del API: https://www.ibm.com/watson/developercloud/assistant/api/v1/java.html?java
 - Demo: https://watson-conversation-duo-dev.ng.bluemix.net/
 - Redbook: http://www.redbooks.ibm.com/redbooks.nsf/redbookabstracts/sg248394.html?Open
 
 ### 2. Visual Recognition
-- Documentation: https://console.bluemix.net/docs/services/visual-recognition/getting-started.html#getting-started-tutorial
-- API Reference: https://www.ibm.com/watson/developercloud/visual-recognition/api/v3/java.html?java
+- Documentación: https://console.bluemix.net/docs/services/visual-recognition/getting-started.html#getting-started-tutorial
+- Documentación del API: https://www.ibm.com/watson/developercloud/visual-recognition/api/v3/java.html?java
 - Demo: https://watson-visual-recognition-duo-dev.ng.bluemix.net/
 - Redbook: http://www.redbooks.ibm.com/redbooks.nsf/redbookabstracts/sg248393.html?Open
