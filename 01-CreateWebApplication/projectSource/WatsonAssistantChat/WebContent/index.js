@@ -11,8 +11,7 @@ class App extends React.Component {
 //    }
 
     sendMessage(text) {
-    	//fetch('http://localhost:9080/WatsonAssistantChat/chatbot/chatservice/?conversationMsg=' + text + '&conversationCtx={"usr":"ezamora"}#')
-    	fetch('https://watsonassistantchatezamora.mybluemix.net/chatbot/chatservice/?conversationMsg=' + text + '&conversationCtx={"usr":"ezamora"}#')
+    	fetch('http://localhost:9080/WatsonAssistantChat/chatbot/chatservice/?conversationMsg=' + text + '&conversationCtx=context')
         .then((response) => {
           return response.json()
         })
