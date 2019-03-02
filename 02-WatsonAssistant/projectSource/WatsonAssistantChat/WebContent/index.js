@@ -2,22 +2,31 @@ class App extends React.Component {
     constructor() {
         super()
         this.state = {
-            messages: []
+            messages: [],
+        	ctx: {usr: 'ezamora'}
         }
         this.sendMessage = this.sendMessage.bind(this)
     } 
     
-//    componentDidMount() {
-//    }
+    componentDidMount() {
+    	this.sendMessage("");
+    }
 
     sendMessage(text) {
-    	fetch('http://localhost:9080/WatsonAssistantChat/chatbot/chatservice/?conversationMsg=' + text + '&conversationCtx=context')
+    	if(text != "") 
+	    	this.setState({
+	            messages: [...this.state.messages, {"usr": "user", "text": text}]
+	        })
+    	
+        var ctxStr = JSON.stringify(this.state.ctx);
+    	fetch(`http://localhost:9080/WatsonAssistantChat/chatbot/chatservice/?conversationMsg=${encodeURIComponent(text)}&conversationCtx=${encodeURIComponent(ctxStr)}`)
         .then((response) => {
           return response.json()
         })
         .then((myJsonResponse) => {
         	this.setState({
-	            messages: [...this.state.messages, myJsonResponse]
+	            messages: [...this.state.messages, {"usr": myJsonResponse.context.usr, "text": myJsonResponse.response}],
+        		ctx: myJsonResponse.context
 	        })
         })
     }
@@ -41,9 +50,9 @@ class MessageList extends React.Component {
             <ul className="message-list">
                 {this.props.messages.map((message, index) => {
                     return (
-                      <li  key={message.response} className="message">
-                      	<div>{message.context.ctx.usr}</div>  
-                      	<div>{message.context.msg}</div>
+                      <li  key={index} className="message">
+                      	<div>{message.usr}</div>  
+                      	<div>{message.text}</div>
                       </li>
                     )
                 })}

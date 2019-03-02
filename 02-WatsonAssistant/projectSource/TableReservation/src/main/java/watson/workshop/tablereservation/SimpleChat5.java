@@ -33,7 +33,7 @@ public class SimpleChat5 {
 		LogManager.getLogManager().reset();
 
 		// Set up Assistant service.
-		Assistant service = new Assistant("2018-02-16");
+		Assistant service = new Assistant("2018-09-20");
 	    service.setUsernameAndPassword("b611a43b-942e-4cfe-b06e-ed296ce1a3dc", "LDp6qZVwPVKu"); 
 	    String workspaceId = "b8921661-8de2-4e34-a248-429bac56cb85";
 
